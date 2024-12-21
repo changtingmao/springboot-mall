@@ -1,13 +1,13 @@
 package com.samchang.springbootmall.service;
 
-import com.samchang.springbootmall.constant.ProductCategory;
+import com.samchang.springbootmall.dto.ProductQueryParams;
 import com.samchang.springbootmall.dto.ProductRequest;
 import com.samchang.springbootmall.model.Product;
 
 import java.util.List;
 
 public interface ProductService {
-    List<Product> getProducts(ProductCategory category, String search);
+    List<Product> getProducts(ProductQueryParams productQueryParams);
 
     Product getProductById(Integer productId);
 
